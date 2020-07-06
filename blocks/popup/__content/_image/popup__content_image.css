@@ -1,0 +1,6 @@
+.popup__content.popup__content_image {
+  padding: 0;
+  width: auto;
+  min-height: 0;
+  background-color: transparent;
+}
