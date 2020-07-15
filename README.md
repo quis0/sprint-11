@@ -6,8 +6,8 @@
 
 ### Quick start
 
-#### :warning: Warning: it may take some time to install the app. If you just want to view the site, go [to try it section](#try-it-httpsquis0githubiosprint-11)
-To install the app on your computer, you will need npm. You can download it from the official website:
+#### :warning: Warning: it may take some time to install the project. If you just want to view the site, go [to try it section](#try-it-httpsquis0githubiosprint-11)
+To install the project on your computer, you will need npm. You can download it from the official website:
 
 https://www.npmjs.com/get-npm
 
