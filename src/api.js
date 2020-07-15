@@ -1,4 +1,4 @@
-class Api {
+export class Api {
   constructor(config) {
     this._url = config.url;
     this._authorization = config.authorization;
@@ -16,16 +16,8 @@ class Api {
       } else {
         return Promise.reject(response.status);
       }
-      /*
-       Надо исправить:
-        - Если response.ok === false, необходимо возращать Promise.reject(response.status)
-      */
     } catch (err) {
       return Promise.reject(err);
-      /*
-       Надо исправить:
-       - Сюда попадет ошибка сети, у нее нет статуса. Необходимо возращать Promise.reject(err);
-       */
     }
 
   }
@@ -44,16 +36,8 @@ class Api {
       } else {
         return Promise.reject(response.status);
       }
-      /*
-       Надо исправить:
-       - Если response.ok === false, необходимо возращать Promise.reject(response.status)
-       */
     } catch (err) {
       return Promise.reject(err)
-      /*
-       Надо исправить:
-       - Сюда попадет ошибка сети, у нее нет статуса. Необходимо возращать Promise.reject(err);
-       */
     }
   }
 
@@ -70,16 +54,8 @@ class Api {
       } else {
         return Promise.reject(response.status);
       }
-      /*
-       Надо исправить:
-       - Если response.ok === false, необходимо возращать Promise.reject(response.status)
-       */
     } catch (err) {
       return Promise.reject(err);
-      /*
-       Надо исправить:
-       - Сюда попадет ошибка сети, у нее нет статуса. Необходимо возращать Promise.reject(err);
-       */
     }
   }
 
@@ -101,16 +77,8 @@ class Api {
       } else {
         return Promise.reject(response.status);
       }
-      /*
-       Надо исправить:
-       - Если response.ok === false, необходимо возращать Promise.reject(response.status)
-       */
     } catch (err) {
       return Promise.reject(err);
-      /*
-       Надо исправить:
-       - Сюда попадет ошибка сети, у нее нет статуса. Необходимо возращать Promise.reject(err);
-       */
     }
   }
 
@@ -127,16 +95,8 @@ class Api {
       } else {
         return Promise.reject(response.status);
       }
-      /*
-       Надо исправить:
-       - Если response.ok === false, необходимо возращать Promise.reject(response.status)
-       */
     } catch (err) {
       return Promise.reject(err)
-      /*
-       Надо исправить:
-       - Сюда попадет ошибка сети, у нее нет статуса. Необходимо возращать Promise.reject(err);
-       */
     }
   }
 
@@ -158,16 +118,8 @@ class Api {
       } else {
         return Promise.reject(response.status);
       }
-      /*
-       Надо исправить:
-       - Если response.ok === false, необходимо возращать Promise.reject(response.status)
-       */
     } catch (err) {
       return Promise.reject(err)
-      /*
-       Надо исправить:
-       - Сюда попадет ошибка сети, у нее нет статуса. Необходимо возращать Promise.reject(err);
-       */
     }
   }
 

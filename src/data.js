@@ -13,3 +13,4 @@ const config = {
   authorization: '95676b56-2da6-4da6-b83d-5dd17042dba0',
 }
 
+export {initialCards, errorMessages, config}

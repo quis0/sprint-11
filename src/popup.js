@@ -1,4 +1,4 @@
-class Popup {
+export class Popup {
   constructor(popup) {
     this._popup = popup;
     this._isForm = true;
@@ -25,10 +25,6 @@ class Popup {
     if (this._isForm) {
       return this._form;
     }
-    /*
-     Можно лучше:
-     - Убрать return
-    */
   }
 
   setEventListeners(resetErrors) {
@@ -38,10 +34,6 @@ class Popup {
         if (this._isForm) {
           console.log(this._form)
           resetErrors(this._form);
-          /*
-           Надо исправить:
-           - Эту функцию необходимо передать внутрь класса
-          */
           this._form.reset();
         };
 
