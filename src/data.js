@@ -9,7 +9,7 @@ const errorMessages = {
 };
 
 const config = {
-  url: 'https://praktikum.tk/cohort11',
+  url: process.env.NODE_ENV === 'development' ? 'http://praktikum.tk/cohort11' : 'https://praktikum.tk/cohort11',
   authorization: '95676b56-2da6-4da6-b83d-5dd17042dba0',
 }
 
