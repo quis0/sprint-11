@@ -1,4 +1,4 @@
-class UserInfo {
+export class UserInfo {
   constructor(nameField, aboutField, photoField, api) {
     this.name = null;
     this.about = null;

@@ -1,4 +1,6 @@
-class FormValidator {
+import errorMessages from './data.js';
+
+export class FormValidator {
   constructor(form) {
     this._form = form;
     this._sumbitButton = form.querySelector('.popup__button');
@@ -76,11 +78,6 @@ class FormValidator {
     }
   };
   resetErrors(form = this._form) {
-    /*
-     Надо исправить:
-     - Этот метод должен быть внутри класса formValidator
-    */
-
     const inputs = [...form.elements];
 
     inputs.forEach((input) => {

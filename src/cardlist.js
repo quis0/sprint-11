@@ -1,4 +1,4 @@
-class CardList {
+export class CardList {
   constructor(container, createCard, api) {
     this._container = container;
     this._createCard = createCard;
@@ -28,10 +28,6 @@ class CardList {
     this._array.forEach((elem) => {
       const card = this._createCard(elem, openImage, images, imagePopupPic);
       this.addCard(card);
-      /*
-       Можно лучше:
-       - Удалить неиспользуемый параметр true
-      */
     })
   }
 };
