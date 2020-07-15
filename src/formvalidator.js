@@ -1,4 +1,4 @@
-import errorMessages from './data.js';
+import { errorMessages } from './data.js';
 
 export class FormValidator {
   constructor(form) {
