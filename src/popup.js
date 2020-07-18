@@ -32,7 +32,6 @@ export class Popup {
       if (event.code === 'Escape') {
 
         if (this._isForm) {
-          console.log(this._form)
           resetErrors(this._form);
           this._form.reset();
         };
