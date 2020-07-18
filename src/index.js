@@ -102,8 +102,9 @@ const cardList = new CardList(placesList, createCard, api);
       });
 
       initialCards.push({ name: elem.name, link: elem.link, likes: elem.likes.length, id: elem._id, ownerId: elem.owner._id, isLiked: isLiked });
-      cardList.render(openImage, images, imagePopupPic, initialCards);
+
     });
+    cardList.render(openImage, images, imagePopupPic, initialCards);
   })
     .catch(err => console.log(err));
 })();
