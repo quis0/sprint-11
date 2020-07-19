@@ -1,4 +1,4 @@
-class Card {
+export class Card {
   constructor(obj, openImage, imagesArray, popupImage, userId, api) {
     this._name = obj.name;
     this._link = obj.link;
@@ -21,17 +21,6 @@ class Card {
   }
 
   toggleLike(event) {
-    /*
-     Можно лучше:
-     - Хорошей практикой считается следующий вид форматирования:
-     this.api.toggleLike(this._id, this._isLiked)
-        .then(res => {
-          event.target.classList.toggle('place-card__like-icon_liked');
-          this.likeCounter.textContent = res.likes.length
-          this._isLiked = !this._isLiked;
-         })
-         .catch(err => console.log(err));
-    */
     this.api.toggleLike(this._id, this._isLiked)
       .then(res => {
         event.target.classList.toggle('place-card__like-icon_liked');
@@ -47,10 +36,6 @@ class Card {
       .then(() => {
         event.target.closest('.place-card').remove();
         this._removeEventListeners()
-        /*
-         Надо испарвить:
-          - Удаляя карточку необходимо удалить ее слушатели
-        */
       })
       .catch(err => console.log(err));
 
