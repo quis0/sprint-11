@@ -6,7 +6,7 @@
 
 ### Quick start
 
-#### :warning: Warning: it may take some time to install the project. If you just want to view the site, go [to try it section](#try-it-httpsquis0githubiosprint-11)
+#### :warning: Warning: it may take some time to install the project.
 To install the project on your computer, you will need npm. You can download it from the official website:
 
 https://www.npmjs.com/get-npm
@@ -22,4 +22,3 @@ npm install
 npm run dev
 ```
 
-### Try it: https://quis0.github.io/sprint-11/
